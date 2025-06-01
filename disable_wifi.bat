@@ -1,0 +1,11 @@
+@echo off
+:: ======= KHỐI TỰ-THĂNG QUYỀN =======
+net session >nul 2>&1
+if %errorlevel% NEQ 0 (
+    echo [!] Dang yeu cau quyen Administrator...
+    powershell -Command "Start-Process '%~f0' -ArgumentList '%*' -Verb RunAs"
+    exit /b
+)
+:: ======= PHẦN CHÍNH =======
+:: Thay "Wi-Fi" bằng tên adapter Wi-Fi của bạn
+netsh interface set interface name="Wi-Fi" admin=disabled
