@@ -2,14 +2,20 @@ https://drive.google.com/file/d/15B-wx9oAy0CIemD2qIejBIBdkDJt7Rtk/view?usp=shari
 
 
 
+Hãy viết một đoạn mã C++ để giải bài toán sau:
+[Mô tả bài toán chi tiết ở đây]
 
-Viết đoạn mã C++ để giải quyết bài toán sau: [mô tả bài toán cụ thể ở đây].
+Yêu cầu khi viết mã:
 
-Các yêu cầu bổ sung:
+Trả lời bằng tiếng Việt
 
-Trả lời hoàn toàn bằng tiếng Việt
+Không viết comment trong mã
 
-Không viết bất kỳ comment nào trong mã nguồn
+Viết mã sao cho giống như do con người viết ra, tránh quá hoàn hảo hoặc máy móc
 
-Mã phải được viết theo phong cách giống như một lập trình viên C++ chuyên nghiệp, tự nhiên, rõ ràng, không máy móc
+Các tên biến và hàm phải được đặt bằng tiếng Việt, có ý nghĩa rõ ràng
+
+
+
+
 
