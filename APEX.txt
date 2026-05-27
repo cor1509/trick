@@ -1,0 +1,87 @@
+C: ➔ Users ➔ Admin ➔ Saved Games ➔ Respawn ➔ Apex  video_config.txt read only
+lệnh: +fps_max 270 -high -novid -no_render_on_input_thread -preload +cl_is_softened_locale 1 +m_rawinput 1 +r_shadowrendertotexture 0 +r_drawparticles 0 +mat_compressedtextures 1 +cl_ragdoll_collide 0 +mat_disable_fancy_blending 1 +lobby_max_fps 0 +building_cubemaps 1 +cl_fovscale 1.7
+
+video_config.txt
+
+"VideoConfig"
+{
+	"setting.cl_gib_allow"		"0"
+	"setting.cl_particle_fallback_base"		"-1"
+	"setting.cl_particle_fallback_multiplier"		"-1"
+	"setting.cl_ragdoll_maxcount"		"0"
+	"setting.cl_ragdoll_self_collision"		"0"
+	"setting.mat_forceaniso"		"0"
+	"setting.mat_mip_linear"		"0"
+	"setting.stream_memory"		"160000"
+	"setting.mat_picmip"		"4"
+	"setting.particle_cpu_level"		"0"
+	"setting.r_createmodeldecals"		"0"
+	"setting.r_decals"		"0"
+	"setting.r_lod_switch_scale"		"0"
+	"setting.shadow_enable"		"0"
+	"setting.shadow_depth_dimen_min"		"0"
+	"setting.shadow_depth_upres_factor_max"		"0"
+	"setting.shadow_maxdynamic"		"0"
+	"setting.dvs_enable"		"0"
+	"setting.dvs_gpuframetime_min"		"0"
+	"setting.dvs_gpuframetime_max"		"0"
+	"setting.sound_volume"		"0.100000"
+	"setting.last_display_width"		"2560"
+	"setting.last_display_height"		"1440"
+	"setting.nowindowborder"		"1"
+	"setting.fullscreen"		"1"
+	"setting.defaultres"		"2560"
+	"setting.defaultresheight"		"1440"
+	"setting.volumetric_lighting"		"0"
+	"setting.volumetric_fog"		"0"
+	"setting.mat_vsync_mode"		"0"
+	"setting.mat_backbuffer_count"		"0"
+	"setting.mat_antialias_mode"		"0"
+	"setting.csm_enabled"		"0"
+	"setting.csm_coverage"		"0"
+	"setting.csm_cascade_res"		"0"
+	"setting.fadeDistScale"		"1.000000"
+	"setting.new_shadow_settings"		"0"
+	"setting.dynamic_streaming_budget"		"0"
+	"setting.gamma"		"0.850000"
+	"setting.configversion"		"10"
+	"setting.map_detail_level"		"0"
+	"setting.ssao_quality"		"0"
+}
+
+SETTING:
+Crosshair damage feedback: Chọn Off (Xóa vạch hiển thị sát thương quanh tâm để dễ ngắm bắn).
+Colorblind mode (Chế độ mù màu): Chọn Tritanopia (Chuyển viền kẻ địch từ đỏ sang vàng, giúp nhìn nổi bật và rõ hơn hẳn).
+NVIDIA
+Low Latency Mode: Chuyển thành Ultra (Giúp giảm tối đa độ trễ hệ thống, tuy nhiên Apex có tích hợp sẵn công nghệ Reflex nên lệnh này bổ trợ rất tốt).
+
+Max Frame Rate: Chọn Off (Người hướng dẫn khuyên tắt giới hạn FPS ở đây vì khóa FPS bằng Nvidia Control Panel sẽ vô tình làm tăng độ trễ đầu vào. Chúng ta đã khóa FPS bằng Lệnh khởi chạy ở Bước 3 rồi).
+
+Power management mode: Chuyển thành Prefer maximum performance (Ép card đồ họa luôn chạy ở mức công suất cao nhất khi chơi game, không tự động giảm xung nhịp để tiết kiệm điện).
+
+Preferred refresh rate: Chọn Highest available (Luôn ưu tiên tần số quét (Hz) cao nhất mà màn hình của bạn hỗ trợ).
+
+Texture filtering - Quality: Chuyển thành High performance (Ưu tiên tối đa hiệu năng và tốc độ xử lý vân bề mặt thay vì độ nét đồ họa).
+
+Texture filtering - Anisotropic sample optimization: Chọn Off.
+
+Texture filtering - Negative LOD bias: Chọn Allow.
+
+Texture filtering - Trilinear optimization: Chọn On.
+
+Threaded optimization: Chọn On (Bật tối ưu hóa đa luồng của CPU).
+
+Triple buffering: Chọn Off (Tắt bộ đệm ba để giảm độ trễ).
+
+Vertical sync (V-Sync): Chọn Off (Tắt đồng bộ dọc để mở khóa khung hình hoàn toàn).
+
+3. Cài đặt hiển thị cho Độ phân giải kéo giãn (Adjust desktop size and position)
+Nếu bạn có ý định chơi các độ phân giải kéo giãn (Stretched Res như tỷ lệ 4:3 hoặc 16:10 ở Bước 1) để mô hình nhân vật địch to hơn, bạn bắt buộc phải chỉnh phần này để màn hình không bị xuất hiện hai vạch đen ở hai bên:
+
+Nhìn menu bên trái, chọn mục Adjust desktop size and position.
+
+Ở mục số 2 (Select a scaling mode): Tích chọn vào Full-screen.
+
+Ở ô Perform scaling on: Chọn Display (hoặc GPU nếu màn hình của bạn không hỗ trợ).
+
+Nhấn Apply ở góc dưới cùng bên phải để lưu cài đặt.
