@@ -23,6 +23,25 @@ Viết giống sinh viên mới học (quan trọng) Cấu trúc: Project\index.
 
 
 
+Get-NetAdapter | Where-Object {$_.Status -eq "Up"} | ForEach-Object {
+    if ($_.InterfaceDescription -match "Wireless|Wi-Fi|WLAN|802.11") {
+        Set-NetIPInterface -InterfaceIndex $_.ifIndex -AutomaticMetric Disabled -InterfaceMetric 10
+    }
+    elseif ($_.MediaType -eq "802.3") {
+        Set-NetIPInterface -InterfaceIndex $_.ifIndex -AutomaticMetric Disabled -InterfaceMetric 50
+    }
+}
+
+Get-NetAdapter | Where-Object {$_.Status -eq "Up"} | ForEach-Object {
+    if ($_.InterfaceDescription -match "Wireless|Wi-Fi|WLAN|802.11") {
+        Set-NetIPInterface -InterfaceIndex $_.ifIndex -AutomaticMetric Disabled -InterfaceMetric 10
+    }
+    elseif ($_.MediaType -eq "802.3") {
+        Set-NetIPInterface -InterfaceIndex $_.ifIndex -AutomaticMetric Disabled -InterfaceMetric 50
+    }
+}
+
+
 
 
 
